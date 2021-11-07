@@ -1,0 +1,293 @@
+/*== FONTS IMPORT FROM GOOGLE FONTS ==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*== INITIALISATION ==*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.rightSide
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 550px);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(51, 51, 51, 0.1);
+}
+
+.rightSide img
+{
+    width: 450px;
+    height: auto;
+}
+
+.content
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 550px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content header
+{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content header .userInfo
+{
+    width: 100%;
+    height: 100px;
+    background-color: #fa6909c9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content header .userInfo .user
+{
+    margin-left: 30px;
+    height: 55px;
+    width: auto;
+}
+
+.content header .userInfo .logo
+{
+    margin-right: 45px;
+    height: 70px;
+    width: auto;
+}
+
+.content header .nav
+{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav ul
+{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav ul li
+{
+    margin: 0px 10px;
+}
+
+.nav ul li a
+{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    padding: 10px 30px;
+}
+
+.nav ul li a:hover,
+.nav ul li .active
+{
+    text-decoration: underline #333;
+}
+
+.content section
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content section .column
+{
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content section .column img
+{
+    padding: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+.content section .column img:hover
+{
+    padding: 25px;
+}
+
+.content .messageFeed
+{
+    width: 550px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.content .messageFeed .conv
+{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 35px;
+    padding-left: 20px;
+}
+
+.content .messageFeed .conv:hover
+{
+    border-left: solid 5px rgba(51, 51, 51, 0.6);
+}
+
+.content .messageFeed .conv img
+{
+    width: 76px;
+    border-radius: 100%;
+    margin-left: 30px;
+}
+
+.content .messageFeed .conv .contentBx
+{
+    width: 70%;
+    padding-left: 30px;
+}
+
+@media (max-width: 830px)
+{
+    .rightSide img
+    {
+        width: 200px;
+    }
+}
+
+@media (max-width: 750px)
+{
+    .rightSide
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 550px)
+{
+    .content
+    {
+        width: 100%;
+    }
+}
+
+@media (max-width: 460px)
+{
+    .content .messageFeed
+    {
+        width: 100%;
+    }
+
+    .content .messageFeed .conv
+    {
+        width: 100%;
+        height: 60px;
+    }
+
+    .content .messageFeed .conv img
+    {
+        width: 57px;
+        border-radius: 100%;
+    }
+
+    .content .messageFeed .conv .contentBx
+    {
+        width: 70%;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 390px)
+{
+    .content .messageFeed .conv
+    {
+        height: 150px;
+        flex-direction: column;
+    }
+    .content .messageFeed .conv .contentBx h2
+    {
+        font-size: 1em;
+        text-align: center;
+    }
+    .content .messageFeed .conv .contentBx p
+    {
+        font-size: 0.75em;
+        text-align: center;
+    }
+    .content .messageFeed .conv img
+    {
+        margin-left: 0;
+    }
+    .content .messageFeed .conv .contentBx
+    {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 380px)
+{
+    .content section
+    {
+        flex-direction: column;
+    }
+    .content section .column
+    {
+        width: 100%;
+    }
+    .content section .column img
+    {
+        padding: 50px;
+    }
+    .content section .column img:hover
+    {
+        padding: 43px;
+    }
+    .content header .userInfo .user
+    {
+        height: 40px;
+    }
+    .content header .userInfo .logo
+    {
+        height: 55px;
+    }
+}

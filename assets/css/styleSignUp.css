@@ -1,0 +1,184 @@
+/*== FONTS IMPORT FROM GOOGLE FONTS ==*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*== INITIALISATION ==*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/background.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.popUp
+{
+    width: 450px;
+    height: 550px;
+    border-radius: 130px;
+    background: #fff;
+    z-index: 4;
+}
+
+.popUp header
+{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.popUp header img
+{
+    width: 35px;
+    height: auto;
+    margin: 20px 0px;
+}
+
+.popUp header h3
+{
+    font-size: 1.6em;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.popUp section
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.popUp section .logInWith
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.popUp section .logInWith a
+{
+    width: 370px;
+    height: 45px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(173, 167, 167, 1);
+    font-size: 1.1em;
+    font-weight: 500;
+    border: solid rgba(173, 167, 167, 0.7);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.popUp section .logInWith a ion-icon
+{
+    font-size: 1.5em;
+    color: #333;
+}
+
+.popUp section .signUpBtn
+{
+    padding: 8px 30px;
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    background: #FA6809;
+    border-radius: 23px;
+    margin-top: 20px;
+}
+
+.popUp footer
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.popUp footer a
+{
+    text-decoration: underline rgba(173, 167, 167, 0.95);
+    margin-top: 10px;
+    font-size: 0.8em;
+    font-weight: 500;
+    color: rgba(173, 167, 167, 0.95);
+}
+
+footer .downloadLinks
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .downloadLinks a
+{
+    text-decoration: none;
+}
+
+footer .downloadLinks a img
+{
+    height: 45px;
+    width: auto;
+    margin: 0px 15px;
+}
+
+@media (max-width: 530px)
+{
+    .popUp
+    {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+        background: rgba(255, 255, 255, 0.781)
+    }
+    .filter
+    {
+        display: none;
+    }
+    .popUp section .logInWith a
+    {
+        border: solid #333;
+        color: #333;
+    }
+    .popUp footer a
+    {
+        color: #333;
+        text-decoration: underline #333;
+    }
+}
